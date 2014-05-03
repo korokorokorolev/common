@@ -7,3 +7,6 @@ JaxWS/target
 *.ear
 *.iml
 .idea/
+
+ws-parent/ws-api/target/
+ws-parent/ws-impl/target/
