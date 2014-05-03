@@ -39,10 +39,15 @@
                                 <wsdlOption>
                                     <wsdl>${project.basedir}/src/main/resources/META-INF/wsdl/HelloService.wsdl</wsdl>
                                     <serviceName>HelloService</serviceName>
-                                    <!--<bindingFile>${project.basedir}/src/main/resources/HelloService-binding.xml</bindingFile>-->
+                                    <!--<bindingFiles>-->
+                                        <!--<bindingFile>${basedir}/src/main/resources/HelloRegistry-binding.xml</bindingFile>-->
+                                    <!--</bindingFiles>-->
                                 </wsdlOption>
                             </wsdlOptions>
                         </configuration>
+                        <goals>
+                            <goal>wsdl2java</goal>
+                        </goals>
                     </execution>
                 </executions>
             </plugin>
