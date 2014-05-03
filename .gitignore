@@ -1,6 +1,7 @@
 *.class
 /build
 /target
+JaxWS/target
 *.jar
 *.war
 *.ear
