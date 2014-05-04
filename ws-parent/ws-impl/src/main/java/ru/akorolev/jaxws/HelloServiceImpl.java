@@ -5,7 +5,7 @@ package ru.akorolev.jaxws;
  */
 public class HelloServiceImpl implements HelloService{
     @Override
-    public SayHiResponse sayHi(SayHi parameters) {
+    public SayHiResponse sayHi(SayHiRequest parameters) {
         SayHiResponse response = new SayHiResponse();
         response.setResponse("value " + parameters);
         return response;
