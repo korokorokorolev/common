@@ -14,7 +14,7 @@
             </xsd:complexType>
             <xsd:complexType name="sayHiResponse">
                 <xsd:sequence>
-                    <xsd:element minOccurs="0" name="return" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="response" type="xsd:string"/>
                 </xsd:sequence>
             </xsd:complexType>
             <xsd:element name="text" type="xsd:string"/>
