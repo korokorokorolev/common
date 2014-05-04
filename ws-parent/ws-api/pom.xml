@@ -39,9 +39,10 @@
                                 <wsdlOption>
                                     <wsdl>${project.basedir}/src/main/resources/META-INF/wsdl/HelloService.wsdl</wsdl>
                                     <serviceName>HelloService</serviceName>
-                                    <!--<bindingFiles>-->
-                                        <!--<bindingFile>${basedir}/src/main/resources/HelloRegistry-binding.xml</bindingFile>-->
-                                    <!--</bindingFiles>-->
+                                    <bindingFiles>
+                                        <bindingFile>${basedir}/src/main/resources/HelloService-binding.xml</bindingFile>
+                                    </bindingFiles>
+                                    <!--Можно добавить в сборку этот файл для того, что бы генерируемые классы были Serializable-->
                                 </wsdlOption>
                             </wsdlOptions>
                         </configuration>
