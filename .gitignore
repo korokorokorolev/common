@@ -10,3 +10,6 @@ JaxWS/target
 
 ws-parent/ws-api/target/
 ws-parent/ws-impl/target/
+
+ws-client-parent/ws-client-api/target/
+ws-client-parent/ws-client-impl/target/

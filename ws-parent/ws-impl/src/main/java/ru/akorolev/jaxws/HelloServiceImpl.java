@@ -7,7 +7,7 @@ public class HelloServiceImpl implements HelloService{
     @Override
     public SayHiResponse sayHi(SayHiRequest parameters) {
         SayHiResponse response = new SayHiResponse();
-        response.setResponse("value " + parameters);
+        response.setResponse("value123 " + parameters.getRequest());
         return response;
     }
 }
