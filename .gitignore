@@ -13,3 +13,7 @@ ws-parent/ws-impl/target/
 
 ws-client-parent/ws-client-api/target/
 ws-client-parent/ws-client-impl/target/
+
+jpa-parent/target/
+
+jdbc-parent/target/
