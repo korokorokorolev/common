@@ -19,3 +19,5 @@ jpa-parent/target/
 jdbc-parent/target/
 
 xml-parent/target/
+
+spring-mvc-parent/target
