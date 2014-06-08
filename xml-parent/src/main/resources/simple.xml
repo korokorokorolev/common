@@ -1,0 +1,22 @@
+<buissness>
+    <product>
+        <name>breath</name>
+        <weigth>10</weigth>
+        <attributes>
+            <attribute>
+                <attributeName>attributeName1</attributeName>
+                <attributeValue>attributeValue1</attributeValue>
+            </attribute>
+        </attributes>
+    </product>
+    <product>
+        <name>soap</name>
+        <weigth>11</weigth>
+        <attributes>
+            <attribute>
+                <attributeName>attributeName11</attributeName>
+                <attributeValue>attributeValue11</attributeValue>
+            </attribute>
+        </attributes>
+    </product>
+</buissness>
