@@ -21,3 +21,5 @@ jdbc-parent/target/
 xml-parent/target/
 
 spring-mvc-parent/target
+
+servlet-parent/target
