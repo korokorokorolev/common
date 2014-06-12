@@ -11,12 +11,12 @@ import java.io.PrintWriter;
 /**
  * Created by akorolev on 6/12/14.
  */
-@WebServlet("/123")
+@WebServlet("/")
 public class SimpleServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        PrintWriter out = resp.getWriter();
-        out.print("<h1>Hello Servlet</h1>");
+        req.setAttribute("name", "king size");
+        req.getRequestDispatcher("simple.jsp").forward(req, resp);
     }
 
     @Override
