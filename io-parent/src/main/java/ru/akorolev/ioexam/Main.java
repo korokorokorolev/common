@@ -17,7 +17,7 @@ public class Main {
 
         bufferedExample = new BufferedExample(PATH);
         bufferedExample.read();
-        bufferedExample.write("LOL");
+        bufferedExample.writeWithBuffer("Str");
 
     }
 }
