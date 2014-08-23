@@ -1,6 +1,18 @@
 <beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jaxws="http://cxf.apache.org/jaxws" xsi:schemaLocation=" http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd">
     <import resource="classpath:META-INF/cxf/cxf.xml"/>
     <import resource="classpath:META-INF/cxf/cxf-servlet.xml"/>
-    <jaxws:endpoint id="helloWorld" implementor="ru.akorolev.jaxws.HelloServiceImpl" address="/HelloService3"/>
+    <jaxws:endpoint id="helloWorld"
+                    xmlns:tns="http://jaxws.akorolev.ru/"
+                    address="/HelloService"
+                    serviceName="tns:HelloService"
+                    publishedEndpointUrl="http://localhost:8080/kingSize/HelloService">
+        <jaxws:implementor>
+            <ref bean="helloService"/>
+        </jaxws:implementor>
+    </jaxws:endpoint>
     <!--address - address of endpoint-->
+
+    <bean id="helloService" class="ru.akorolev.jaxws.HelloServiceImpl"/>
+
+
 </beans>
